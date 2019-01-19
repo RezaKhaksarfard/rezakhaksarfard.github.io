@@ -1,20 +1,24 @@
 body {
-    margin: 10px auto;
+    margin: 20px;
+    background-color: #F4F4F4;
 }
 nav ul {
-    list-style: none;
+    color: #000000;
+    list-style-type: decimal;
     line-height: 1.5;
 }
 nav ul li {
     font-size: 25px;
 }
 a {
+    color: #0000FF;
     text-decoration: none;
 }
 a:hover {
     font-weight: bold;
 }
 h1 {
+    color: #000000;
     font-size: 40px;
     font-weight: bold;
 }
