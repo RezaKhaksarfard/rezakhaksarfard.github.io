@@ -1,14 +1,14 @@
 body {
-    margin: 20px;
+    margin: 20px auto;
     background-color: #F4F4F4;
 }
 nav ul {
     color: #000000;
     list-style-type: decimal;
-    line-height: 1.5;
+    line-height: 1.8;
 }
 nav ul li {
-    font-size: 20px;
+    font-size: 16px;
 }
 a {
     color: #0000FF;
@@ -19,6 +19,6 @@ a:hover {
 }
 h1 {
     color: #000000;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
 }
