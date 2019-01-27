@@ -1,0 +1,13 @@
+body{
+	background-color: #F7F7F7 !important;
+}
+div.container{
+	width: 95%;
+}
+div.prompt {
+	width: 0px; 
+	min-width: 0px; 
+	visibility: collapse
+}
+
+
