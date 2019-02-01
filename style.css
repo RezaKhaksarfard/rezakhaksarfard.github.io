@@ -4,7 +4,7 @@ body {
 }
 nav ul {
     color: #000000;
-    list-style-type: none;
+    list-style-type: disc;
     line-height: 1.8;
 }
 nav ul li {
