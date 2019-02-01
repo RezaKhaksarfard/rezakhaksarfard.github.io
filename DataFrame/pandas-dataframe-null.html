@@ -11904,7 +11904,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="pandas.DataFrame.isnull">pandas.DataFrame.isnull<a class="anchor-link" href="#pandas.DataFrame.isnull">&#182;</a></h3>
+<h3 id="pandas.DataFrame.isna">pandas.DataFrame.isna<a class="anchor-link" href="#pandas.DataFrame.isna">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -11913,7 +11913,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span> <span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span> <span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span> <span class="n">df</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span> <span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12019,7 +12019,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span> <span class="nb">any</span><span class="p">(</span> <span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span> <span class="p">)</span> <span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span> <span class="nb">any</span><span class="p">(</span> <span class="n">df</span><span class="p">[</span> <span class="s1">&#39;A&#39;</span> <span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span> <span class="p">)</span> <span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12050,7 +12050,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span> <span class="nb">any</span><span class="p">(</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span> <span class="p">)</span> <span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span> <span class="nb">all</span><span class="p">(</span> <span class="n">df</span><span class="p">[</span> <span class="s1">&#39;A&#39;</span> <span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span> <span class="p">)</span> <span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12067,7 +12067,7 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>True
+<pre>False
 </pre>
 </div>
 </div>
@@ -12081,38 +12081,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span> <span class="nb">all</span><span class="p">(</span> <span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span> <span class="p">)</span> <span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>True
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span> <span class="o">~</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span> <span class="p">]</span> <span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span> <span class="o">~</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span> <span class="p">]</span> <span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12211,16 +12180,16 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="pandas.isnull">pandas.isnull<a class="anchor-link" href="#pandas.isnull">&#182;</a></h3>
+<h3 id="pandas.isna">pandas.isna<a class="anchor-link" href="#pandas.isna">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span> <span class="n">pd</span><span class="o">.</span><span class="n">isnull</span><span class="p">(</span> <span class="n">df</span><span class="p">[</span> <span class="s1">&#39;A&#39;</span> <span class="p">]</span><span class="o">.</span><span class="n">iat</span><span class="p">[</span> <span class="mi">4</span> <span class="p">]</span> <span class="p">)</span> <span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span> <span class="n">pd</span><span class="o">.</span><span class="n">isna</span><span class="p">(</span> <span class="n">df</span><span class="p">[</span> <span class="s1">&#39;A&#39;</span> <span class="p">]</span><span class="o">.</span><span class="n">iat</span><span class="p">[</span> <span class="mi">4</span> <span class="p">]</span> <span class="p">)</span> <span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12256,7 +12225,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span> <span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span> <span class="p">)</span>
@@ -12346,7 +12315,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Fill with a constant value</span>
@@ -12454,7 +12423,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Forward fill with last not null value</span>
@@ -12562,7 +12531,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Fill columns with different methods</span>
@@ -12682,7 +12651,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Fill null values of column &#39;C&#39; with inear interpolation</span>
@@ -12792,13 +12761,13 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Fill null values with interpolation using index numerical values</span>
 
 <span class="n">df1</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-<span class="n">df1</span> <span class="o">=</span> <span class="n">df1</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span> <span class="o">~</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span> <span class="p">]</span>
+<span class="n">df1</span> <span class="o">=</span> <span class="n">df1</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span> <span class="o">~</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span> <span class="p">]</span>
 <span class="n">df1</span><span class="p">[</span> <span class="s1">&#39;C&#39;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span> <span class="s1">&#39;C&#39;</span> <span class="p">]</span><span class="o">.</span><span class="n">interpolate</span><span class="p">(</span> <span class="n">method</span> <span class="o">=</span> <span class="s1">&#39;index&#39;</span> <span class="p">)</span>
 <span class="n">display</span><span class="p">(</span> <span class="n">df1</span> <span class="p">)</span>
 </pre></div>
