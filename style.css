@@ -1,18 +1,26 @@
 body {
-    margin: 20px 10px;
+    margin: 20px 30px;
     background-color: #F7F7F7;
 }
 nav ul {
+    padding: 0px;
     color: #000000;
-    list-style-type: disc;
-    line-height: 1.8;
+    list-style-type: none;
+    line-height: 3.0;
+    font-size: 18px;
+    font-weight: bold;
 }
-nav ul li {
+nav ol {
+    color: #000000;
+    line-height: 1.8;
     font-size: 16px;
+    font-weight: normal;
+    list-style-type: disc;
 }
 a {
     color: #0000FF;
     text-decoration: none;
+    font-weight: normal;
 }
 a:hover {
     font-weight: bold;
@@ -20,10 +28,5 @@ a:hover {
 h1 {
     color: #000000;
     font-size: 25px;
-    font-weight: bold;
-}
-h2 {
-    color: #000000;
-    font-size: 18px;
     font-weight: bold;
 }
