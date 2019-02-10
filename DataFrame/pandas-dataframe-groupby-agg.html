@@ -11905,7 +11905,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">dfSource</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span> <span class="n">by</span> <span class="o">=</span> <span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="n">as_index</span> <span class="o">=</span> <span class="kc">False</span> <span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span> <span class="p">{</span> <span class="s1">&#39;B&#39;</span><span class="p">:</span> <span class="s1">&#39;max&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">:</span> <span class="s1">&#39;min&#39;</span> <span class="p">}</span> <span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span> <span class="n">drop</span> <span class="o">=</span> <span class="kc">True</span> <span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">dfSource</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span> <span class="n">by</span> <span class="o">=</span> <span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="n">as_index</span> <span class="o">=</span> <span class="kc">False</span> <span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span> <span class="p">{</span> <span class="s1">&#39;B&#39;</span><span class="p">:</span> <span class="s1">&#39;max&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">:</span> <span class="s1">&#39;min&#39;</span> <span class="p">}</span> <span class="p">)</span>
 <span class="n">display</span><span class="p">(</span> <span class="n">df</span> <span class="p">)</span>
 
 <span class="n">df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">&#39;B&#39;</span><span class="p">:</span> <span class="s1">&#39;B_min&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">:</span> <span class="s1">&#39;C_min&#39;</span> <span class="p">},</span> <span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span> <span class="p">)</span>
@@ -11946,8 +11946,8 @@ div#notebook {
     <tr style="text-align: right;">
       <th></th>
       <th>A</th>
-      <th>C</th>
       <th>B</th>
+      <th>C</th>
     </tr>
   </thead>
   <tbody>
@@ -11960,8 +11960,8 @@ div#notebook {
     <tr>
       <th>1</th>
       <td>b</td>
-      <td>1</td>
       <td>6</td>
+      <td>1</td>
     </tr>
   </tbody>
 </table>
@@ -11996,8 +11996,8 @@ div#notebook {
     <tr style="text-align: right;">
       <th></th>
       <th>A</th>
-      <th>C_min</th>
       <th>B_min</th>
+      <th>C_min</th>
     </tr>
   </thead>
   <tbody>
@@ -12010,8 +12010,8 @@ div#notebook {
     <tr>
       <th>1</th>
       <td>b</td>
-      <td>1</td>
       <td>6</td>
+      <td>1</td>
     </tr>
   </tbody>
 </table>
@@ -12069,13 +12069,13 @@ div#notebook {
   <thead>
     <tr>
       <th></th>
-      <th>C</th>
       <th>B</th>
+      <th>C</th>
     </tr>
     <tr>
       <th></th>
-      <th>min</th>
       <th>max</th>
+      <th>min</th>
     </tr>
   </thead>
   <tbody>
@@ -12086,8 +12086,8 @@ div#notebook {
     </tr>
     <tr>
       <th>1</th>
-      <td>1</td>
       <td>6</td>
+      <td>1</td>
     </tr>
   </tbody>
 </table>
@@ -12121,8 +12121,8 @@ div#notebook {
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>C_min</th>
       <th>B_max</th>
+      <th>C_min</th>
     </tr>
   </thead>
   <tbody>
@@ -12133,8 +12133,8 @@ div#notebook {
     </tr>
     <tr>
       <th>1</th>
-      <td>1</td>
       <td>6</td>
+      <td>1</td>
     </tr>
   </tbody>
 </table>
@@ -12192,13 +12192,13 @@ div#notebook {
   <thead>
     <tr>
       <th></th>
-      <th>C</th>
       <th colspan="2" halign="left">B</th>
+      <th>C</th>
     </tr>
     <tr>
       <th></th>
-      <th>min</th>
       <th>max</th>
+      <th>min</th>
       <th>min</th>
     </tr>
   </thead>
@@ -12206,13 +12206,13 @@ div#notebook {
     <tr>
       <th>0</th>
       <td>5</td>
-      <td>5</td>
       <td>1</td>
+      <td>5</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>1</td>
       <td>6</td>
+      <td>1</td>
       <td>1</td>
     </tr>
   </tbody>
@@ -12247,23 +12247,106 @@ div#notebook {
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>C_min</th>
       <th>B_max</th>
       <th>B_min</th>
+      <th>C_min</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
       <td>5</td>
-      <td>5</td>
       <td>1</td>
+      <td>5</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>1</td>
       <td>6</td>
       <td>1</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Calculate-sum-of-cubes-for-each-group">Calculate sum of cubes for each group<a class="anchor-link" href="#Calculate-sum-of-cubes-for-each-group">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="k">def</span> <span class="nf">SumCubes</span><span class="p">(</span> <span class="n">s</span> <span class="p">):</span>
+    <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span> <span class="p">[</span> <span class="n">np</span><span class="o">.</span><span class="n">power</span><span class="p">(</span> <span class="n">val</span><span class="p">,</span> <span class="mi">3</span> <span class="p">)</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">s</span> <span class="p">]</span> <span class="p">)</span>
+
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">dfSource</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span> <span class="n">by</span> <span class="o">=</span> <span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="n">as_index</span> <span class="o">=</span> <span class="kc">False</span> <span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span> <span class="p">{</span> <span class="s1">&#39;B&#39;</span><span class="p">:</span> <span class="n">SumCubes</span> <span class="p">}</span> <span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">&#39;B&#39;</span><span class="p">:</span> <span class="s1">&#39;B_SumCubes&#39;</span> <span class="p">},</span> <span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span> <span class="p">)</span>
+<span class="n">display</span><span class="p">(</span> <span class="n">df</span> <span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>B_SumCubes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>a</td>
+      <td>217</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>b</td>
+      <td>350</td>
     </tr>
   </tbody>
 </table>
